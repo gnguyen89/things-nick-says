@@ -1,0 +1,46 @@
+{
+  "name": "wer-boilerplate",
+  "version": "1.0.0",
+  "description": "Webpack Express React Boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --host 0.0.0.0 --port 3000",
+    "build": "webpack",
+    "test": "run eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luckytintinnz/wer-boilerplate.git"
+  },
+  "keywords": [
+    "react",
+    "express",
+    "webpack",
+    "boilerplate"
+  ],
+  "author": "Giang Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luckytintinnz/wer-boilerplate/issues"
+  },
+  "homepage": "https://github.com/luckytintinnz/wer-boilerplate#readme",
+  "dependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.18.0",
+    "babel-loader": "^6.2.6",
+    "express": "^4.14.0",
+    "html-webpack-plugin": "^2.24.1",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-router": "^3.0.0",
+    "webpack": "^1.13.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
