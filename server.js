@@ -1,14 +1,23 @@
 // var fs = require('fs');
 var path = require('path');
 var express = require('express');
-// var bodyParser = require('body-parser');
+var bodyParser = require('body-parser');
 var app = express();
 
 // var scrape = require('./routes/scrape');
 
-app.set('port', (process.env.PORT || 3000));
+app.set('port', (process.env.PORT || 3001));
 
 app.use('/', express.static(path.join(__dirname, 'dist')));
+
+// Fix cannot get issue by using React router
+app.get('*', function(req, res) {
+  res.sendfile('./dist/index.html');
+});
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
+
 // app.use('/scrape', scrape);
 //
 // app.use(bodyParser.json());
