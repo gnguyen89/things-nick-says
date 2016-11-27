@@ -1,0 +1,47 @@
+{
+    "extends": "airbnb",
+    "rules": {
+    // Restrict file extensions that may be required
+    "react/require-extension": "off",
+
+    // Prevent missing parentheses around multilines JSX
+    "react/jsx-wrap-multilines": "off",
+
+    // only .jsx files may have JSX
+    "react/jsx-filename-extension": "off",
+
+    // Prevent missing displayName in a React component definition
+    "react/display-name": "off",
+
+    // enforce newline at the end of file, with no multiple empty lines
+    "eol-last": "off",
+
+    // specify the maximum length of a line in your program
+    "max-len": "off",
+
+    // we need this for re-selectors
+    "no-shadow": "off",
+
+    // disallow usage of expressions in statement position
+    "no-unused-expressions": "off",
+
+    // disallow reassignment of function parameters
+    // disallow parameter object manipulation
+    "no-param-reassign": ["error", {
+      "props": false
+    }],
+
+    // ensure imports point to files/modules that can be resolved
+    "import/no-unresolved": [2, {
+      "ignore": [".\/styles$"]
+    }],
+    "arrow-body-style" : "off",
+    // this requires all proptypes of array, object to be more specific...
+    // good practise but a pain to refactor for now...
+    "react/forbid-prop-types": "off",
+
+    "jsx-a11y/no-static-element-interactions": "off",
+
+    "jsx-quotes": "off"
+  }
+}
