@@ -6,7 +6,7 @@ var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
 });
 module.exports = {
   entry: [
-    './src/app.js'
+    './src/app.js',
   ],
   output: {
     path: __dirname + '/dist',
