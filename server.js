@@ -1,8 +1,8 @@
 // var fs = require('fs');
-var path = require('path');
-var express = require('express');
-var bodyParser = require('body-parser');
-var app = express();
+const path = require('path');
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
 
 // var scrape = require('./routes/scrape');
 
