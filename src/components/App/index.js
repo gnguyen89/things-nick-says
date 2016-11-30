@@ -1,12 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router';
 
 import css from './styles.css';
 
 export default function App() {
-  return <div className={css.red}>
-    <div>Hello World</div>
-    <Link to='about'>Go to about</Link>
+  return <div className={css.container}>
+    <div className={css.quoteContainer}>
+      <blockquote className={css.quote}>
+        Courage is not the absence of fear, but rather the judgement that something else is more important than fear.
+        <cite>Someone famous</cite>
+      </blockquote>
+    </div>
   </div>;
 }
 
