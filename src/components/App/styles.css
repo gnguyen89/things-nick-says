@@ -1,3 +1,51 @@
-.red {
-  color: red;
+.container, .quoteContainer {
+  height: 100%;
+}
+
+.quoteContainer {
+  display: flex;
+  align-items: center;
+}
+
+.quote {
+  font-family: Georgia, serif;
+  font-size: 1.8rem;
+  font-style: italic;
+  margin: 0 auto;
+  padding: 0.25em 40px;
+  line-height: 1.45;
+  position: relative;
+  color: #383838;
+}
+
+/*.quote:before {
+  content: "\201C";
+  display: block;
+  font-size: 80px;
+  position: absolute;
+  left: -5px;
+  top: -20px;
+  color: #7a7a7a;
+}
+
+.quote:after {
+  content: "\201D";
+  display: block;
+  font-size: 80px;
+  position: absolute;
+  right: 10px;
+  bottom: -20px;
+  color: #7a7a7a;
+}*/
+
+.quote cite {
+  color: #999999;
+  font-size: 1.4rem;
+  display: block;
+  margin-top: 8px;
+  text-align: right;
+}
+ 
+.quote cite:before {
+  content: "\2014 \2009";
 }

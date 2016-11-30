@@ -1,12 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router';
 
 import css from './styles.css';
 
 export default function App() {
-  return <div className={css.red}>
-    <div>Hello World</div>
-    <Link to='about'>Go to about</Link>
+  return <div className={css.container}>
+    <div className={css.quoteContainer}>
+      <blockquote className={css.quote}>
+        It&apos;s harder to get hard when you&apos;re old.
+        <cite>Nick Ng</cite>
+      </blockquote>
+    </div>
   </div>;
 }
 

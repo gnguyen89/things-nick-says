@@ -1,7 +1,8 @@
 import React, { PropTypes } from 'react';
+import css from '../styles/app.css';
 
 export default function AppContainer(props) {
-  return <div>
+  return <div className={css.appContainer}>
     {props.children}
   </div>;
 }
