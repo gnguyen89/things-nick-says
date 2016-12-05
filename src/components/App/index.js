@@ -1,5 +1,6 @@
 import React from 'react';
 import quoteService from '../../services/quoteService';
+import quoteTypes from '../../utils/quoteTypes';
 
 import css from './styles.css';
 
@@ -27,9 +28,9 @@ export default function App() {
   const quote = quoteService.getRandomQuote();
   return <div className={css.container}>
     <div className={css.quoteContainer}>
-      {quote.type === 'quote' && renderQuote(quote)}
-      {quote.type === 'conversation' && renderConversation(quote)}
-      {quote.type === 'situation' && renderSituation(quote)}
+      {quote.type === quoteTypes.quote && renderQuote(quote)}
+      {quote.type === quoteTypes.conversation && renderConversation(quote)}
+      {quote.type === quoteTypes.situation && renderSituation(quote)}
     </div>
   </div>;
 }
