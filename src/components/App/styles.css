@@ -5,6 +5,12 @@
 .quoteContainer {
   display: flex;
   align-items: center;
+  animation: fadein 3s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 .quote {
@@ -12,7 +18,7 @@
   font-size: 1.8rem;
   font-style: italic;
   margin: 0 auto;
-  padding: 0.25em 40px;
+  padding: 0.25em 5em;
   line-height: 1.45;
   position: relative;
   color: #383838;

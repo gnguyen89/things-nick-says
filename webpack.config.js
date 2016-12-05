@@ -37,4 +37,5 @@ module.exports = {
     ],
   },
   plugins: [HTMLWebpackPluginConfig],
+  devtool: '#inline-source-map',
 };

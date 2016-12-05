@@ -1,7 +1,51 @@
 {
   "quotes": [
-    "It's harder to get hard when you're old.",
-    "Lorem ipsum you are reading a placeholder quote.",
-    "Random placeholder quote for something else crazy Nick said."
+    {
+      "type": "quote",
+      "quote": "It's harder to get hard when you're old."
+    },
+    {
+      "type": "quote",
+      "quote": "That's bad ass. Wait, shouldn't it be good ass?"
+    },
+    {
+      "type": "situation",
+      "quote": "Yo isn't this dangerous and illegal? I don't want to die!",
+      "situation": "Nick Ng on crossing the street"
+    },
+    {
+      "type": "situation",
+      "quote": "Oh my god! It's Jamie Beaton!",
+      "situation": "Nick Ng on reading an email by Jamie Beaton"
+    },
+    {
+      "type": "situation",
+      "quote": "Hi, I'm Nick, I'm a developer and I'm afraid of trampolines.",
+      "situation": "Nick Ng on his introduction"
+    },
+    {
+      "type": "situation",
+      "quote": "Goats and sheep aren't the same species. I've unsuccessfully tried to mate them for years on my dad's farm.",
+      "situation": "Nick Ng on the Chinese zodiac"
+    },
+    {
+      "type": "situation",
+      "quote": "My parents and my girlfriend's parents introduced us to each other.",
+      "situation": "Nick Ng on how he met his girlfriend"
+    },
+    {
+      "type": "situation",
+      "quote": "Hi I'm Nick, the last time I played World of Warcraft was 3 years ago.",
+      "situation": "Nick Ng when he introduced himself to an interviewee"
+    },
+    {
+      "type": "situation",
+      "quote": "You should tell your girlfriend to visit the train museum.",
+      "situation": "Nick Ng on recommending where to go in Japan"
+    },
+    {
+      "type": "conversation",
+      "quote": "Jacky: Nick, say a random thing.\nNick: Limp dick?"
+    }
   ]
 }
