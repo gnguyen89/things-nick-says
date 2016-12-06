@@ -1,15 +1,16 @@
 // var fs = require('fs');
-var path = require('path');
-var express = require('express');
-var bodyParser = require('body-parser');
-var app = express();
+const path = require('path');
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
 
 // var scrape = require('./routes/scrape');
 
 app.set('port', (process.env.PORT || 3001));
 
-app.use('/', express.static(path.join(__dirname, 'dist')));
+app.use(express.static('/static'));
 
+app.use('/', express.static(path.join(__dirname, 'dist')));
 // Fix cannot get issue by using React router
 app.get('*', function(req, res) {
   res.sendfile('./dist/index.html');

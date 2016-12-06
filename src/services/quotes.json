@@ -1,0 +1,57 @@
+{
+  "quotes": [
+    {
+      "type": "quote",
+      "quote": "It's harder to get hard when you're old."
+    },
+    {
+      "type": "quote",
+      "quote": "That's bad ass. Wait, shouldn't it be good ass?"
+    },
+    {
+      "type": "situation",
+      "quote": "Wait, we're crossing here? Isn't this dangerous? And illegal? I don't want to die",
+      "situation": "Nick Ng on crossing the street"
+    },
+    {
+      "type": "situation",
+      "quote": "Oh my god! It's Jamie Beaton!",
+      "situation": "Nick Ng on reading an email by Jamie Beaton"
+    },
+    {
+      "type": "fact",
+      "fact": "Nick is afraid of trampolines."
+    },
+    {
+      "type": "situation",
+      "quote": "Goats and sheep aren't the same species. I've unsuccessfully tried to mate them for years on my dad's farm.",
+      "situation": "Nick Ng on the Chinese zodiac"
+    },
+    {
+      "type": "fact",
+      "fact": "Nick and his girlfriend met through their parents."
+    },
+    {
+      "type": "fact",
+      "fact": "Nick last played World of Warcraft in 2013."
+    },
+    {
+      "type": "situation",
+      "quote": "You should tell your girlfriend to visit the train museum.",
+      "situation": "Nick Ng on recommending where to go in Japan"
+    },
+    {
+      "type": "conversation",
+      "quote": "Jacky: Nick, say a random thing.\nNick: Limp dick?"
+    },
+    {
+      "type": "situation",
+      "quote": "Is it just you and David at the Queen Street office?",
+      "situation": "Nick Ng every 2 hours."
+    },
+    {
+      "type": "fact",
+      "fact": "Nick wanted to be a locksmith when he was in highschool."
+    }
+  ]
+}
