@@ -1,7 +1,5 @@
-import React from 'react';
-import quoteService from '../../services/quoteService';
+import React, { PropTypes } from 'react';
 import quoteTypes from '../../utils/quoteTypes';
-
 import css from './styles.css';
 
 function renderQuote(quote) {
@@ -24,15 +22,19 @@ function renderConversation(conversation) {
   </blockquote>;
 }
 
-export default function App() {
-  const quote = quoteService.getRandomQuote();
+export default function App({ quote }) {
   return <div className={css.container}>
-    <div className={css.quoteContainer}>
+    {quote && <div className={css.quoteContainer}>
       {quote.type === quoteTypes.quote && renderQuote(quote)}
       {quote.type === quoteTypes.conversation && renderConversation(quote)}
       {quote.type === quoteTypes.situation && renderSituation(quote)}
     </div>
+    }
   </div>;
 }
 
 App.displayname = 'App';
+
+App.propTypes = {
+  quote: PropTypes.object,
+};

@@ -5,7 +5,6 @@
 .quoteContainer {
   display: flex;
   align-items: center;
-  animation: fadein 3s;
 }
 
 @keyframes fadein {
@@ -22,6 +21,7 @@
   line-height: 1.45;
   position: relative;
   color: #383838;
+  animation: fadein 3s;
 }
 
 /*.quote:before {
