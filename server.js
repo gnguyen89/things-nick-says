@@ -8,8 +8,9 @@ const app = express();
 
 app.set('port', (process.env.PORT || 3001));
 
-app.use('/', express.static(path.join(__dirname, 'dist')));
+app.use(express.static('/static'));
 
+app.use('/', express.static(path.join(__dirname, 'dist')));
 // Fix cannot get issue by using React router
 app.get('*', function(req, res) {
   res.sendfile('./dist/index.html');

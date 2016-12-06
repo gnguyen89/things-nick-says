@@ -5,6 +5,7 @@ const HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
   template: path.join(__dirname, 'index.html'),
   filename: 'index.html',
   inject: 'body',
+  favicon: 'static/favicon.ico',
 });
 
 module.exports = {
