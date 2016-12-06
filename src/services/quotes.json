@@ -19,9 +19,8 @@
       "situation": "Nick Ng on reading an email by Jamie Beaton"
     },
     {
-      "type": "situation",
-      "quote": "Hi, I'm Nick, I'm a developer and I'm afraid of trampolines.",
-      "situation": "Nick Ng on his introduction"
+      "type": "fact",
+      "fact": "Nick is afraid of trampolines."
     },
     {
       "type": "situation",
@@ -29,14 +28,12 @@
       "situation": "Nick Ng on the Chinese zodiac"
     },
     {
-      "type": "situation",
-      "quote": "My parents and my girlfriend's parents introduced us to each other.",
-      "situation": "Nick Ng on how he met his girlfriend"
+      "type": "fact",
+      "fact": "Nick and his girlfriend met through their parents."
     },
     {
-      "type": "situation",
-      "quote": "Hi I'm Nick, the last time I played World of Warcraft was 3 years ago.",
-      "situation": "Nick Ng when he introduced himself to an interviewee"
+      "type": "fact",
+      "fact": "Nick last played World of Warcraft in 2013."
     },
     {
       "type": "situation",
@@ -51,6 +48,10 @@
       "type": "situation",
       "quote": "Is it just you and David at the Queen Street office?",
       "situation": "Nick Ng every 2 hours."
+    },
+    {
+      "type": "fact",
+      "fact": "Nick wanted to be a locksmith when he was in highschool."
     }
   ]
 }

@@ -7,7 +7,7 @@ export default class AppContainer extends Component {
     super();
 
     this.updateTimer = this.updateTimer.bind(this);
-    setInterval(this.updateTimer, 5000);
+    setInterval(this.updateTimer, 9999);
     const quote = quoteService.getRandomQuote();
     this.state = {
       quote,

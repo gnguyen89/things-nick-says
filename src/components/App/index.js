@@ -22,12 +22,26 @@ function renderConversation(conversation) {
   </blockquote>;
 }
 
+function renderFact({ fact }) {
+  return (
+    <div className={css.quote}>
+      <div className={css.heading}>
+        Fact:
+      </div>
+      <div className={css.fact}>
+        {fact}
+      </div>
+    </div>
+  );
+}
+
 export default function App({ quote }) {
   return <div className={css.container}>
     {quote && <div className={css.quoteContainer}>
       {quote.type === quoteTypes.quote && renderQuote(quote)}
       {quote.type === quoteTypes.conversation && renderConversation(quote)}
       {quote.type === quoteTypes.situation && renderSituation(quote)}
+      {quote.type === quoteTypes.fact && renderFact(quote)}
     </div>
     }
   </div>;
