@@ -46,6 +46,11 @@
     {
       "type": "conversation",
       "quote": "Jacky: Nick, say a random thing.\nNick: Limp dick?"
+    },
+    {
+      "type": "situation",
+      "quote": "Is it just you and David at the Queen Street office?",
+      "situation": "Nick Ng every 2 hours."
     }
   ]
 }
