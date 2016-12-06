@@ -44,6 +44,15 @@
   color: #7a7a7a;
 }*/
 
+.quote .heading {
+  font-style: normal;
+}
+
+.quote .fact {
+  padding-left: 0.5em;
+  font-style: normal;
+}
+
 .quote cite {
   color: #999999;
   font-size: 1.4rem;
