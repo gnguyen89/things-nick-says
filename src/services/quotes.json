@@ -52,6 +52,10 @@
     {
       "type": "fact",
       "fact": "Nick wanted to be a locksmith when he was in highschool."
+    },
+    {
+      "type": "fact",
+      "fact": "Nick is a university drop-out."
     }
   ]
 }
