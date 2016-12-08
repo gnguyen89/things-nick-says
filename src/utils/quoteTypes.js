@@ -3,4 +3,4 @@ module.exports = {
   conversation: 'conversation',
   situation: 'situation',
   fact: 'fact',
-}
+};

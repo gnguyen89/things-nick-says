@@ -8,14 +8,11 @@ export default class AppContainer extends Component {
 
     this.updateTimer = this.updateTimer.bind(this);
     setInterval(this.updateTimer, 9999);
-    const quote = quoteService.getRandomQuote();
-    this.state = {
-      quote,
-    };
+    this.state = quoteService.getRandomQuote();
   }
 
   updateTimer() {
-    this.setState({ quote: quoteService.getRandomQuote() });
+    this.setState(quoteService.getRandomQuote(this.state.quoteHat));
   }
 
   render() {
