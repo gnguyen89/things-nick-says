@@ -1,26 +1,43 @@
 import React, { PropTypes, Component } from 'react';
 import css from '../styles/app.css';
 import quoteService from '../services/quoteService';
+import watchFirebase from '../services/firebaseClient';
 
 export default class AppContainer extends Component {
   constructor() {
     super();
 
     this.updateTimer = this.updateTimer.bind(this);
-    setInterval(this.updateTimer, 9999);
-    const quote = quoteService.getRandomQuote();
+    this.updateQuotes = this.updateQuotes.bind(this);
+
+    watchFirebase('/quotes', this.updateQuotes);
     this.state = {
-      quote,
+      quote: '',
+      intervalRef: null,
     };
   }
 
   updateTimer() {
-    this.setState({ quote: quoteService.getRandomQuote() });
+    const { quotes } = this.state;
+    if (quotes && quotes.length) {
+      this.setState({ quote: quoteService.getRandomQuote(quotes) });
+    }
+  }
+  updateQuotes(quotes) {
+    const { intervalRef, quote: quoteInState } = this.state;
+
+    this.setState({ quotes, quote: quoteInState || quoteService.getRandomQuote(quotes) });
+
+    if (!intervalRef) {
+      const newRef = setInterval(this.updateTimer, 9999);
+      this.setState({ intervalRef: newRef });
+    }
   }
 
   render() {
     const { children } = this.props;
     const { quote } = this.state;
+    if (!quote) return null;
     return <div className={css.appContainer}>
       {children && React.cloneElement(this.props.children, {
         quote,
