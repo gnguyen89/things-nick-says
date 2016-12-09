@@ -22,14 +22,14 @@ function renderConversation(conversation) {
   </blockquote>;
 }
 
-function renderFact({ fact }) {
+function renderFact(fact) {
   return (
     <div className={css.quote}>
       <div className={css.heading}>
         Fact:
       </div>
       <div className={css.fact}>
-        {fact}
+        {fact.fact}
       </div>
     </div>
   );
