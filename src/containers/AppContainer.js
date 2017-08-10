@@ -33,8 +33,7 @@ export default class AppContainer extends Component {
     ));
 
     if (!intervalRef) {
-      const newRef = setInterval(this.updateTimer, 9999);
-      this.setState({ intervalRef: newRef });
+      this.updateTimer();
     }
   }
 
